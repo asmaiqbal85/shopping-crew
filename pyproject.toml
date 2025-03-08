@@ -1,0 +1,22 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "asmaiqbal85", email = "aasmaiqbal85@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "chainlit>=2.2.1",
+    "crewai-tools>=0.36.0",
+    "crewai[tools]>=0.102.0",
+    "google-generativeai>=0.8.4",
+]
+
+[project.scripts]
+project = "project:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
